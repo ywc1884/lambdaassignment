@@ -1,13 +1,16 @@
 package com.yc;
 
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.stream.Stream;
 
 public class LambdaAssignment {
 
     public void assignment() {
         //add up numbers
-        int sum = addUp(Stream.of(1, 2, 3, 4, 5, 6));
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
+        int sum = addUp(numbers.stream());
         System.out.println(sum);
     }
 
